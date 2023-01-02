@@ -1,6 +1,8 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//Archivo para interactuar con el DOM
 
-console.log(example, data);
+import { crearTarjeta } from './data.js';
+import data from './data/pokemon/pokemon.js';
+
+crearTarjeta(data.pokemon);
+console.log(crearTarjeta, data);
+

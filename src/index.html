@@ -6,7 +6,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header class = cabecera>
+      <p> 
+        <img class="foto1" src="pikachu.jpg" alt="imagen 1">
+        <img class="foto2" src="pokeball.JPG" alt="imagen 2">
+      </p>
+      <nav>
+        <ul>
+          <li><a href=""><h5>Inicio</h5></a></li>
+          <li><a href=""><h5>Pokémon</h5></a></li>
+        </ul> 
+      </nav>
+    </header><br>
+    <div class="buscador">
+      <div class="flexsearch--wrapper">
+        <form class="flexsearch--form" action="#" method="post">
+          <div class="flexsearch--input-wrapper">
+            <input class="flexsearch--input" type="search" placeholder="Buscar Pokémon...">
+          </div>
+          <input class="flexsearch--submit" type="submit" value="&#10140;"/>
+        </form>
+      </div>
+  </div>
+  <br><br><br><br>
+    <div id="container">
+      <div class="contenedor">
+        
+      </div>
+    </div>
     <script src="main.js" type="module"></script>
+    <script src="./data/pokemon/pokemon.js"></script>
   </body>
 </html>

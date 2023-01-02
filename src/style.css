@@ -1,0 +1,154 @@
+body{
+  background: #EEEFBD;
+}
+.cabecera{
+  background: #0B3D87;
+  height: 70px;
+}
+.foto1 { 
+  padding: 0px; 
+  margin: 0px;  
+  float: left; 
+  width: 85px; 
+}
+.foto2 { 
+  padding: 0px; 
+  margin: 0;  
+  float: right; 
+  width: 61px; 
+}
+nav ul li{
+  display: inline-block;
+	line-height: 40%;
+  
+}
+nav ul li a {
+  display: block;
+  padding: 10px 10px;
+  width: 80%;
+  text-decoration: none;
+  background: #f7e866;
+  margin: 0px;
+  font-family: Verdana;
+  color: black
+}
+nav ul li a:hover {
+  background: #1EBE5E;
+}
+.tarjeta{
+  padding: 0px 1px 5px;
+  background: #ACB7C8;
+  justify-content: center;
+  width:200px;
+  border: 1px solid rgb(247, 204, 204);
+  box-shadow: 2px 2px 8px 4px #f8baf3;
+  border-radius:4px;
+  font-family: Arial;
+  margin-bottom: 20px;
+  
+}
+  .cuerpo{
+    padding: 1px;
+    background: #f7e866;
+    text-align: center;
+  }
+.titulo{
+  text-align: center;
+}
+.imagen{
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+.contenedor{
+  justify-content: center;
+}
+
+/*barra de busqueda*/
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.buscador {
+  padding: 0 25px 0 100px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 30px;
+  padding: 0 46px 0 10px;
+	border-color: #1EBE5E;
+  border-radius: 20px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 2px;
+  margin-top: 15px;
+  color: rgb(202, 191, 191);
+  font-family: Verdana;
+	font-size: 15px;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 5px;
+  border: none;
+	margin-top: 2px; /* margin-top + border-width */
+  margin-right: 0px; /* border-width */
+	background: transparent;
+  color: #1EBE5E;
+  font-size: 20px;
+  line-height: 5px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: rgb(218, 205, 205);
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: rgb(202, 190, 190); 
+}
+
+.flexsearch--submit:hover {
+  color: rgb(190, 181, 181);
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
