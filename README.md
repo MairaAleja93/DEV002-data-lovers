@@ -1,74 +1,42 @@
-# Data Lovers
+# PokéLovers ♥
+
+![fd2d07e43d17a73270a196733ac301b8](https://user-images.githubusercontent.com/116084109/210471519-308cab63-4e99-49ce-bcf5-52c8c80d5cba.jpg)
+
+
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Usuarios](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [3. Historias de usuario](#3-objetivos-de-aprendizaje)
+* [4. Prototipo de baja fidelidad](#4-consideraciones-generales)
+* [5. Prototipo de alta fidelidad](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [6. Test](#6-hacker-edition)
 
 ***
 
-## 1. Preámbulo
+## 1. Usuarios
 
-La página esta dirigida a fans de Pokémon o cualquier persona que esté interesada en saber
-sobre los Pokémon. Es un sitio donde puedes encontrar información relevante para sobre los Pokémon, se describen sus caracteristicas principales.
 
-Este sitio es muy intuitivo por lo que el usuario puede navegar con facilidad, el diseño es atractivo para fans de Pokémon, lo cual es muy importante.
 
 ## 2. Resumen del proyecto
 
-Al ingresar a la página, se encontrara con una pagina incial en la cual se puede escoger ver las imagenes más asombrosas de Pokémon o ver las cards de cada uno y encontrar información relevante allí.
 
 
 
-## 4. Consideraciones generales
+
+
+## 3. Historias de usuario
 
 *
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 4. Prototipo de baja fidelidad
 
 
 
-### Definición del producto
+## 5. Prototipo de alta fidelidad
 
 
-### Historias de usuario
+## 6. Test
 
-
-
-### Diseño de la Interfaz de Usuario
-
-#### Prototipo de baja fidelidad
-
-
-
-#### Prototipo de alta fidelidad
-
-
-#### Testeos de usabilidad
-
-
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-
-
-### Pruebas unitarias
-
-
-
-## 6. Hacker edition
-
-
-
-## 7. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. 
 
