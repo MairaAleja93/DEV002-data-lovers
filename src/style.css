@@ -1,39 +1,64 @@
 body{
   background: #EEEFBD;
+
 }
 .cabecera{
   background: #0B3D87;
-  height: 70px;
+  height: 73px;
 }
 .foto1 { 
   padding: 0px; 
   margin: 0px;  
   float: left; 
-  width: 85px; 
+  width: 75px; 
 }
-.foto2 { 
-  padding: 0px; 
-  margin: 0;  
-  float: right; 
-  width: 61px; 
+.foto3{
+  float: right;
+  width: 40px;
+  padding-left: 66%;
 }
+/***#btnFiltrar{
+  float: right;
+  padding: 4px 10px;
+  width: 20%;
+  font-family: Arial;
+  border: 10px;
+  background: #0B3D87;
+  color: white;
+  FONT-SIZE: 12pt;
+  padding-right: 4%;
+}
+#btnFiltrar:hover {
+  background: #1EBE5E;
+}***/
 nav ul li{
   display: inline-block;
-	line-height: 40%;
-  
+	line-height: 100%;
+}
+.nav > li {
+  float: left;
+  line-height: 100%;
 }
 nav ul li a {
   display: block;
-  padding: 10px 10px;
-  width: 80%;
+  padding: 1px 2px;
+  width: 100%;
   text-decoration: none;
   background: #f7e866;
   margin: 0px;
-  font-family: Verdana;
-  color: black
+  font-family: Arial;
+  color: black;
+  FONT-SIZE: 15pt;
 }
 nav ul li a:hover {
   background: #1EBE5E;
+  display: block;
+}
+nav li:hover > ul{
+  display: block;
+}
+nav li ul{
+  display: none;
 }
 .tarjeta{
   padding: 0px 1px 5px;
@@ -44,7 +69,7 @@ nav ul li a:hover {
   box-shadow: 2px 2px 8px 4px #f8baf3;
   border-radius:4px;
   font-family: Arial;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   
 }
   .cuerpo{
@@ -62,7 +87,13 @@ nav ul li a:hover {
   height: 200px;
 }
 .contenedor{
-  justify-content: center;
+  margin: 0 0 0 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
 }
 
 /*barra de busqueda*/
@@ -94,7 +125,9 @@ nav ul li a:hover {
  * Configurable Styles *
  ***********************/
 .buscador {
-  padding: 0 25px 0 100px; /* Padding for other horizontal elements */
+  padding: 0 100px 0 200px; 
+  position: relative;
+  right: 0px;
 }
 
 .flexsearch--input {
@@ -111,6 +144,7 @@ nav ul li a:hover {
   color: rgb(202, 191, 191);
   font-family: Verdana;
 	font-size: 15px;
+  
 }
 	
 .flexsearch--submit {
@@ -128,6 +162,7 @@ nav ul li a:hover {
   color: #1EBE5E;
   font-size: 20px;
   line-height: 5px;
+  
 }
 
 .flexsearch--input:focus {
@@ -150,5 +185,21 @@ nav ul li a:hover {
 
 input:-moz-placeholder {
   color: #888
+}
+
+.filter{
+  display: none;
+}
+#sort{
+  background: #f7e866;
+  margin: 0px;
+  font-family: Arial;
+  border-color: #1EBE5E;
+  border-radius: 20px;
+  border-width: 2px;
+  padding: 5px 8px;
+  position: relative;
+  left: 90px;
+  top: 46px;
 }
 

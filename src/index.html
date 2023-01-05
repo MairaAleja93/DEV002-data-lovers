@@ -9,14 +9,26 @@
     <header class = cabecera>
       <p> 
         <img class="foto1" src="pikachu.jpg" alt="imagen 1">
-        <img class="foto2" src="pokeball.JPG" alt="imagen 2">
+        
       </p>
       <nav>
         <ul>
-          <li><a href=""><h5>Inicio</h5></a></li>
-          <li><a href=""><h5>Pokémon</h5></a></li>
-        </ul> 
+          <li id="liFiltro">Seleccione Generación
+            <ul>
+              <li id="kanto" value="kanto">Kanto</li>
+              <li id="johto" value="johto">Johto</li>
+            </ul>
+          </li>
+          <li id="liOrdenar">Ordenar
+            <ul>
+              <li id="A-Z" value="A-Z">Ordenar A-Z</li>
+              <li id="Z-A" value="Z-A">Ordenar Z-A</li>
+            </ul>
+          </li>
+          <img class="foto3" src="4539501.png" alt="imagen 3">
+        </ul>
       </nav>
+      
     </header><br>
     <div class="buscador">
       <div class="flexsearch--wrapper">
@@ -28,12 +40,9 @@
         </form>
       </div>
   </div>
-  <br><br><br><br>
-    <div id="container">
-      <div class="contenedor">
-        
-      </div>
-    </div>
+  <br><br><br>
+      <div class="contenedor"></div>
+      <div id="tarjetas"></div>
     <script src="main.js" type="module"></script>
     <script src="./data/pokemon/pokemon.js"></script>
   </body>
