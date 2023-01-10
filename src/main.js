@@ -1,11 +1,12 @@
 //Archivo para interactuar con el DOM
 import { filtrarGeneracion } from './data.js';
+import { sort } from './data.js';
+import { computeStats } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 const crearTarjeta = (pokemon) => {
     console.log("funcion crear tarjetas", pokemon)
     let contenedor = document.querySelector('.contenedor')
-    let tarjeta = document.querySelector('.tarjetas')
     contenedor.innerHTML = " ";
     pokemon.forEach(pokemon => {
       contenedor.innerHTML += `
@@ -30,10 +31,11 @@ let btnFiltroKanto = document.getElementById("kanto");
 let btnFiltroJohto = document.getElementById("johto");
 
 btnFiltroKanto.addEventListener("click", (e) =>{
-    const target = e.target;
-    let filtroKanto = filtrarGeneracion(data.pokemon, 'kanto')
-    crearTarjeta(filtroKanto);
-    console.log("filtro generación kanto")
+  const target = e.target;
+  console.log(target);
+  let fKanto = filtrarGeneracion(data.pokemon, 'kanto')
+  crearTarjeta(fKanto);
+  console.log("filtro generación johto")
 })
 
 btnFiltroJohto.addEventListener("click", (e) =>{
@@ -44,11 +46,38 @@ btnFiltroJohto.addEventListener("click", (e) =>{
     console.log("filtro generación johto")
 })
 
-let btnOrdenarA = document.getElementById("liOrdenar");
+const ordenar = document.getElementById('select-sort')
+ordenar.addEventListener('change', (event) => {
+  let sortSelected = event.target.value;
+  let sortPokemon = sort(data.pokemon, "name", sortSelected)
+
+  crearTarjeta(sortPokemon)
+
+})
+const calTexto = document.getElementById('calculo')
+const calculo = document.getElementById('estadistica')
+calculo.addEventListener('click', () => {
+  let nuevaData = computeStats("kanto", data.pokemon)
+  let nuevo = computeStats("johto", data.pokemon)
+
+  calTexto.innerHTML=`<p>El porcentaje de Pokemones que aparecieron en Generación i es ${nuevaData}% y pokemones que aparecieron en la Generación ii ${nuevo}%</p>`
+})
+
+/**const calcular = document.getElementById('estadistica')
+calcular.addEventListener('click', (e)=>{
+  const porcent = computeStats()
+  crearTarjeta()
+})
+
+/**let btnOrdenarA = document.getElementById("A-Z");
+let btnOrdenarZA = document.getElementById("Z-A");
 
 btnOrdenarA.addEventListener("click", (e) =>{
-    let s = e.target.value;
-    let o = sort(data.pokemon, data.pokemon.name, s)
-    crearTarjeta(o);
-    console.log("ordenar?", o)
+  //const target = e.target;
+  let ordenn = sort(data.pokemon, data.pokemon.name, 'A-Z')
+  crearTarjeta(ordenn);
 })
+btnOrdenarZA.addEventListener("click", (e) =>{
+  let ordenZA = sort(data.pokemon, data.pokemon.name, 'Z-A')
+  crearTarjeta(ordenZA);
+})**/

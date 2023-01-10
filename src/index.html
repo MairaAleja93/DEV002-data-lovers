@@ -8,8 +8,7 @@
   <body>
     <header class = cabecera>
       <p> 
-        <img class="foto1" src="pikachu.jpg" alt="imagen 1">
-        
+        <img class="foto1" src="pikachu.jpg" alt="imagen 1"> 
       </p>
       <nav>
         <ul>
@@ -19,14 +18,13 @@
               <li id="johto" value="johto">Johto</li>
             </ul>
           </li>
-          <li id="liOrdenar">Ordenar
-            <ul>
-              <li id="A-Z" value="A-Z">Ordenar A-Z</li>
-              <li id="Z-A" value="Z-A">Ordenar Z-A</li>
-            </ul>
-          </li>
-          <img class="foto3" src="4539501.png" alt="imagen 3">
+          <select id="select-sort">
+            <option value="A-Z">Ordenar de A-Z</option>
+            <option value="Z-A">Ordenar de Z-A</option>
+          </select>
+          <button id="estadistica">Estadística</button>
         </ul>
+
       </nav>
       
     </header><br>
@@ -40,7 +38,8 @@
         </form>
       </div>
   </div>
-  <br><br><br>
+  <br>
+  <div id="calculo"></div><br>
       <div class="contenedor"></div>
       <div id="tarjetas"></div>
     <script src="main.js" type="module"></script>
