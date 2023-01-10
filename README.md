@@ -58,6 +58,10 @@ En ésta historia de usuario se realizó:
 * Se creó una función para mostrar en pantalla un cálculo estadístico, que permite saber cuantos pokémon pertenecen a la Generación i (Kanto) y
 cuales pertenecen a la Generación ii (Johto).
 
+Historia de usuario 5:
+
+Realizar los test de las funciones: filtrarGeneracion, sort y computeStats.
+
 ## 4. Prototipo de baja fidelidad
 
 
