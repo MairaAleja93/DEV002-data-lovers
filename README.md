@@ -1,9 +1,5 @@
 # PokéLovers ♥
 
-
-![image](https://user-images.githubusercontent.com/116084109/210558579-0b2596d6-475e-40db-b000-c4975d0e4c24.png)
-
-
 ## Índice
 
 * [1. Usuarios](#1-preámbulo)

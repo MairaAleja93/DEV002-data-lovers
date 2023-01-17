@@ -1,53 +1,44 @@
-// estas funciones son de ejemplo
-
-/*export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};*/
 export const filtrarGeneracion = (pokemon, condicion) =>{
   let pokemones = pokemon.filter(elemento => elemento.generation.name === condicion)
   return pokemones;
 };
 
-export const sort = (data, sortBy, sortOrder) => {
-  let sortData
-  if (sortOrder === 'A-Z') {
-    sortData = data.sort((pokemonA, pokemonB) => {
-      if (pokemonA[sortBy] < pokemonB[sortBy]) {
+export const sort = (pokemon, ord, ordSeleccionado) => {
+  let ordenado;
+  if (ordSeleccionado === 'A-Z') {
+    ordenado = pokemon.sort((pokemonA, pokemonB) => {
+      if (pokemonA[ord] < pokemonB[ord]) {
         return -1;
       }
-      else if (pokemonA[sortBy] > pokemonB[sortBy]) {
+      else if (pokemonA[ord] > pokemonB[ord]) {
         return 1;
       } else {
         return 0;
       }
     })
-    return sortData
-  } else if (sortOrder === 'Z-A') {
-    sortData = data.sort((pokemonA, pokemonB) => {
-      if (pokemonA[sortBy] < pokemonB[sortBy]) {
+    return ordenado
+  } else if (ordSeleccionado === 'Z-A') {
+    ordenado = pokemon.sort((pokemonA, pokemonB) => {
+      if (pokemonA[ord] < pokemonB[ord]) {
         return 1;
       }
-      else if (pokemonA[sortBy] > pokemonB[sortBy]) {
+      else if (pokemonA[ord] > pokemonB[ord]) {
         return -1;
       } else {
         return 0;
       }
     })
-    return sortData
+    return ordenado
   } else {
-    return data
+    return pokemon
   }
 };
 
 export const computeStats = (tipo, data) => {
   const total = data.length;
   const pokemon = data.filter(pokemon => pokemon.generation.name.includes(tipo));
-  const conteoRol = pokemon.length;
-  const porcentaje = (conteoRol * 100) / total;
+  const contarPoFiltrado = pokemon.length;
+  const porcentaje = (contarPoFiltrado * 100) / total;
   return porcentaje.toFixed(2);
 }
 

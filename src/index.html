@@ -6,27 +6,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class = cabecera>
-      <p> 
-        <img class="foto1" src="pikachu.jpg" alt="imagen 1"> 
-      </p>
+    <header class = "cabecera">
+      <img class="foto1" src="pikachu.jpg" alt="imagen 1">
       <nav>
         <ul>
-          <li id="liFiltro">Seleccione Generación
-            <ul>
-              <li id="kanto" value="kanto">Kanto</li>
-              <li id="johto" value="johto">Johto</li>
-            </ul>
-          </li>
-          <select id="select-sort">
+          <select id="liFiltro">
+            <option value="filtro">Generación</option>
+            <option value="kanto">Kanto</option>
+            <option value="johto">Johto</option>
+          </select>
+          <button id="estadistica">% Cálculo E.</button>
+          <select id="selectOrden">
+            <option value="az-za">Ordenar</option>
             <option value="A-Z">Ordenar de A-Z</option>
             <option value="Z-A">Ordenar de Z-A</option>
           </select>
-          <button id="estadistica">Estadística</button>
         </ul>
-
       </nav>
-      
     </header><br>
     <div class="buscador">
       <div class="flexsearch--wrapper">
@@ -38,11 +34,10 @@
         </form>
       </div>
   </div>
-  <br>
   <div id="calculo"></div><br>
+  <div id="texto-orden"></div><br>
       <div class="contenedor"></div>
       <div id="tarjetas"></div>
     <script src="main.js" type="module"></script>
-    <script src="./data/pokemon/pokemon.js"></script>
   </body>
 </html>
