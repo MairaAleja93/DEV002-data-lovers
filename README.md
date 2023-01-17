@@ -39,8 +39,24 @@ Historia de usuario 1:
 Historia de usuario 2:
 
 En ésta historia de usuario se realizó:
-* Filtrar la data de las generaciones para mostrar que Pokémon pertenece a Kanto y cuales pertenecen a Johto
+* Filtrar la data de las generaciones para mostrar los Pokémon que pertenecen a Kanto y los que pertenecen a Johto
 * Tipo: Todos los Pokémon pertenecen a un tipo de especie, esto los identifica, y de esta característica depende muchas cosas importantes de los Pokémon, como sus       debilidades.
+
+Historia de usuario 3:
+
+En ésta historia de usuario se realizó:
+* Crear una opción en pantalla que permite ordenar
+* Mostrar la data en orden alfabético y/o en orden descendente
+
+Historia de usuario 4:
+
+En ésta historia de usuario se realizó:
+* Se creó una función para mostrar en pantalla un cálculo estadístico, que permite saber cuantos pokémon pertenecen a la Generación i (Kanto) y
+cuales pertenecen a la Generación ii (Johto).
+
+Historia de usuario 5:
+
+Realizar los test de las funciones: filtrarGeneracion, sort y computeStats.
 
 ## 4. Prototipo de baja fidelidad
 
